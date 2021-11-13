@@ -1,6 +1,6 @@
 # Jisho Word Viewer
 
-View a word or japanese character meaning along with its definition.
+View a word or japanese character meaning along with its reading.
 
 ## Usage
 
