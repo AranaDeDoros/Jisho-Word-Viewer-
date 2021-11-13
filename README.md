@@ -12,7 +12,11 @@ println(jpnObj)
 
 val engObj = new EngWord("rain").lookup.toString
 println(engObj)
+```
 
+Or via implicit conversions.
+
+```scala
 import jisho.common.Implicits.strToWord
 val jpnImplicit = "僕は友達が少".lookup
 println(jpnImplicit)
