@@ -14,7 +14,7 @@ object Jisho extends App {
   println(engObj)
 
   import jisho.common.Implicits.strToWord
-  val jpnImplicit = "僕は友達が少".lookup
+  val jpnImplicit = "友達".lookup
   println(jpnImplicit)
 
   val engImplicit = "dog".lookup
