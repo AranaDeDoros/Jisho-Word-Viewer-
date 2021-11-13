@@ -13,6 +13,13 @@ libraryDependencies += "org.scalatest" %% "scalatest" % "3.2.10" % "test",
     libraryDependencies += "net.ruippeixotog" %% "scala-scraper" % "2.2.1"
   )
 
+fork := true
+javaOptions ++= Seq(
+  "-Dfile.encoding=UTF-8"
+)
+connectInput in run := true
+
+
 // Uncomment the following for publishing to Sonatype.
 // See https://www.scala-sbt.org/1.x/docs/Using-Sonatype.html for more detail.
 
