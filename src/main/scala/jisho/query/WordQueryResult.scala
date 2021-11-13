@@ -28,8 +28,5 @@ final class WordQueryResult[A <: Queryable](jpnWords: List[A])
     asString.mkString
   }
 
-  def ito: String = {
-    this.toString
-  }
 
 }

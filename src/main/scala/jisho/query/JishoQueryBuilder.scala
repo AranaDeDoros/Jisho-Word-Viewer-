@@ -51,7 +51,7 @@ class JishoScrapper {
   import net.ruippeixotog.scalascraper.model._
   import scala.collection.immutable.HashMap
   def scrap(str: String): List[JpnWordResult] = {
-    println(s"here $str")
+
     val isJapanese   = Utils.isJapaneseString(str)
     val mainSelector = "#primary .concept_light.clearfix"
 
