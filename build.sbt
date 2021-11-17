@@ -19,6 +19,9 @@ javaOptions ++= Seq(
 )
 connectInput in run := true
 
+githubOwner := "aranadedoros"
+githubRepository := "jisho-word-viewer"
+githubActor := "AranaDeDoros"
 
 // Uncomment the following for publishing to Sonatype.
 // See https://www.scala-sbt.org/1.x/docs/Using-Sonatype.html for more detail.
