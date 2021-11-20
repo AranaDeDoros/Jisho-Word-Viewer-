@@ -7,19 +7,23 @@ object Jisho extends App {
 
   import jisho.models.koto.JpnWord
 
-  val jpnObj = new JpnWord("ore").lookup.toString
-  println(jpnObj)
+  val jpnObj = new JpnWord("car").lookup.toString
+  //println(jpnObj)
 
   val engObj = new EngWord("rain").lookup.toString
-  println(engObj)
+  //println(engObj)
 
-  import jisho.common.Implicits.strToWord
+  import jisho.common.Implicits._
   val jpnImplicit = "友達".lookup
-  println(jpnImplicit)
+  //println(jpnImplicit)
 
   val engImplicit = "dog".lookup
-  println(engImplicit)
+  //println(engImplicit)
 
+  //val engUsingInterpolator = eng"car".lookup.toString
+  val jpnUsingInterpolator = jpn"血液".lookup.toString
+  //println(engUsingInterpolator)
+  println(jpnUsingInterpolator)
 }
 
 
