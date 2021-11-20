@@ -29,7 +29,7 @@ Or using string interpolators.
 ```scala
 import jisho.common.Implicits._
 val engUsingInterpolator = eng"car".lookup.toString
-val jpnUsingInterpolator = jpn"血液".lookup.toString
+val jpnUsingInterpolator = jpn"夜".lookup.toString
 ```
 
 
