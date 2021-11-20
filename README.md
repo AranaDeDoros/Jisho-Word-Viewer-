@@ -35,27 +35,31 @@ val jpnUsingInterpolator = jpn"血液".lookup.toString
 
 Example of expected output:
 ```bash
-[info] (けつえきない) 血液内科 | haematology; hematology
-[info] (けつえき) 血液中 | within the blood; blood-borne
-[info] (けつえきのうかんもん) 血液脳関門 | blood-brain barrier
-[info] (けつえきがた) 血液型 | blood type; blood group
-[info] (NA) 血液検査の参考基準値 | Reference ranges for blood tests
-[info] (けつえき) 血液病 | hematological disease; haematological disease
-[info] (けつえきかん) 血液循環 | blood circulation
-[info] (けつえきとうせき) 血液透析 | hemodialysis; haemodialysis
-[info] (けつえきぎんこう) 血液銀行 | blood bank
-[info] (けつえきとう) 血液中の糖 | blood sugar
-[info] (けつえき) 血液ドーピング | blood doping
-[info] (けつえきせいざい) 血液製剤 | blood products
-[info] (けつえきけん) 血液検査 | blood test; hemanalysis
-[info] (けつえきがく) 血液学 | hematology
-[info] (けつえき) 血液 | blood
-[info] (けつえき) 血液恐怖症 | hemophobia; haemophobia; blood phobia
-[info] (けつえき) 血液ガス | blood agent
+[info] (よふ) 夜更け | late at night; small hours of the morning
+[info] (やきん) 夜勤 | night shift
+[info] (やはん) 夜半 | midnight; dead of night
+[info] (やこう) 夜行 | walking around at night; night travel
+[info] (よるおそ) 夜遅く | late at night; at a late hour
+[info] (やかんがいしゅつきんしれい) 夜間外出禁止令 | curfew
+[info] (よなか) 夜中 | middle of the night; dead of night
+[info] (よどお) 夜通し | all night; throughout the night
+[info] (NA) 夜 | counter for nights
+[info] (よに) 夜逃げ | night flight (without paying); skipping out by night; moonlight flit
+[info] (やかん) 夜間 | night; nighttime
+[info] (よる) 夜 | evening; night
+[info] (やしょく) 夜食 | supper; night meal; late-night snack; "fourth meal"; midnight snack
+[info] (やぐ) 夜具 | bedding; bedclothes
+[info] (よぞら) 夜空 | night sky
+[info] (よあ) 夜明け | dawn; daybreak
+[info] (やけい) 夜景 | night view; night skyline; nightscape
+[info] (やこうせい) 夜行性 | nocturnality; nocturnal habits
+[info] (よみち) 夜道 | street at night; making a night journey
+[info] (よふ) 夜更かし | staying up late; keeping late hours; sitting up late at night; nighthawk
 ...
 ```
 ## Pending
 
 -  Add support for okurigana.
+-  Add support for wikipedia definitions.
 -  Accept japanese input from the command line.
 -  Add support for phrases and not just words.
