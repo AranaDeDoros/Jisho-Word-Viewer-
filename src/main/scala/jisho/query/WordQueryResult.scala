@@ -16,7 +16,7 @@ final class WordQueryResult[A <: Queryable](jpnWords: List[A])
         case a: JpnWordResult =>
           //println(a.kana.furigana)
           val furiganaLength = a.kana.furigana.length()
-          val furigana = if(furiganaLength > 1){
+          val furigana = if (furiganaLength > 1) {
             s"(${a.kana.furigana})"
           } else {
             "(NA)"
@@ -28,6 +28,5 @@ final class WordQueryResult[A <: Queryable](jpnWords: List[A])
     })
     asString.mkString
   }
-
 
 }

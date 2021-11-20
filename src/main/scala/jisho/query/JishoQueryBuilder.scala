@@ -63,15 +63,15 @@ class JishoScrapper {
     val matches = jisho >> elementList(mainSelector)
 
     val entries = matches.foldRight(HashMap[Kana, Definition]())((a, b) => {
-      val furiganaList = a >?> elementList(s"span.furigana > .kanji-2-up.kanji")
+      val furiganaList = a >?> elementList(s"span.furigana > .kanji")
 
       val furiganaElements = furiganaList match {
         case Some(f) => f
-        case None => List.empty[net.ruippeixotog.scalascraper.model.Element]
+        case None    => List.empty[net.ruippeixotog.scalascraper.model.Element]
       }
 
-      val furiganaStr = furiganaElements.map( _ >> text).mkString.trim
-
+      val furiganaStr = furiganaElements.map(_ >> text).mkString.trim
+      println(furiganaStr)
       val kana =
         a >> element(s".concept_light-representation span.text") >> text
       val meanings = a >> element(s".meaning-meaning") >> text

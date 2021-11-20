@@ -21,11 +21,10 @@ object Jisho extends App {
   //println(engImplicit)
 
   //val engUsingInterpolator = eng"car".lookup.toString
-  val jpnUsingInterpolator = jpn"血液".lookup.toString
+  val jpnUsingInterpolator = jpn"夜".lookup.toString
   //println(engUsingInterpolator)
   println(jpnUsingInterpolator)
 }
-
 
 /*object Jisho{
 

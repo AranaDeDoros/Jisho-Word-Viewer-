@@ -1,6 +1,6 @@
 # Jisho Word Viewer
 
-View a word or japanese character meaning along with its reading.
+View a word or japanese character meaning along with its reading. This is a WIP, and due to the nature of html scrapping, there's bound to be a lot of gotchas.
 
 ## Usage
 
@@ -56,5 +56,6 @@ Example of expected output:
 ```
 ## Pending
 
+-  Add support for okurigana.
 -  Accept japanese input from the command line.
 -  Add support for phrases and not just words.
