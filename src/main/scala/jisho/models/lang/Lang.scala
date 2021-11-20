@@ -2,11 +2,8 @@ package jisho.models.lang
 
 import scala.collection.immutable.HashMap
 
-case class Kana(kana: String, furiganaReading: Option[String]) {
-  val furigana = this.furiganaReading match {
-    case Some(f) => f
-    case None    => ""
-  }
+case class Kana(kana: String, furiganaReading: String) {
+  val furigana = this.furiganaReading
 }
 
 case class Definition(meanings: String)

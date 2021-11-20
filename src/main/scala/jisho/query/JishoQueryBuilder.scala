@@ -56,18 +56,26 @@ class JishoScrapper {
     val mainSelector = "#primary .concept_light.clearfix"
 
     val jisho = if (isJapanese) {
-      browser.get(s"$url/$str")
+      browser.get(s"$url$str")
     } else {
-      browser.get(s"""$url/"$str"""")
+      browser.get(s"""$url"$str"""")
     }
     val matches = jisho >> elementList(mainSelector)
 
     val entries = matches.foldRight(HashMap[Kana, Definition]())((a, b) => {
-      val furigana = a >?> element(s"span.furigana > .kanji-2-up.kanji") >> text
+      val furiganaList = a >?> elementList(s"span.furigana > .kanji-2-up.kanji")
+
+      val furiganaElements = furiganaList match {
+        case Some(f) => f
+        case None => List.empty[net.ruippeixotog.scalascraper.model.Element]
+      }
+
+      val furiganaStr = furiganaElements.map( _ >> text).mkString.trim
+
       val kana =
         a >> element(s".concept_light-representation span.text") >> text
       val meanings = a >> element(s".meaning-meaning") >> text
-      val entry    = b + (new Kana(kana, furigana) -> new Definition(meanings))
+      val entry    = b + (new Kana(kana, furiganaStr) -> new Definition(meanings))
       entry
     })
 
